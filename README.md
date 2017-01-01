@@ -32,10 +32,10 @@ backend default {
 ## Environmental variables
 You can configure Varnish daemon by following env variables:
 ```
-> VARNISH_VCL_CONFIG /etc/varnish/default.vcl
-> VARNISH_STORAGE="malloc,3G"
-> VARNISH_DAEMON_OPTS="-p thread_pool_min=5 -p thread_pool_max=500 -p thread_pool_timeout=300 -p default_ttl=3600 -p default_grace=3600"
-> VARNISH_NCSA_FORMAT %{X-Client-IP}i %l %u %t "%r" %s %b "%{Referer}i" "%{User-agent}i"
+* VARNISH_VCL_CONFIG /etc/varnish/default.vcl
+* VARNISH_STORAGE="malloc,3G"
+* VARNISH_DAEMON_OPTS="-p thread_pool_min=5 -p thread_pool_max=500 -p thread_pool_timeout=300 -p default_ttl=3600 -p default_grace=3600"
+* VARNISH_NCSA_FORMAT %{X-Client-IP}i %l %u %t "%r" %s %b "%{Referer}i" "%{User-agent}i"
 ```
 
 ## Author
