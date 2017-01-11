@@ -3,7 +3,7 @@ MAINTAINER Lee Witherington lee@witherington.net
 
 RUN apk update && \
     apk upgrade && \
-    apk add --no-cache varnish=4.1.2-r3
+    apk add --no-cache logrotate varnish=4.1.2-r3
 
 ADD ./config /etc
 
