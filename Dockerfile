@@ -1,9 +1,9 @@
-FROM lwitherington/supervisor:3.3.3-r1
+FROM lwitherington/supervisor:3.2.0-r0
 MAINTAINER Lee Witherington lee@witherington.net
 
 RUN apk update && \
     apk upgrade && \
-    apk add --no-cache logrotate varnish=5.2.1-r0
+    apk add --no-cache logrotate varnish=4.1.9-r0
 
 ADD ./config /etc
 
