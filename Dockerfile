@@ -1,5 +1,5 @@
-FROM lwitherington/supervisor:3.2.0-r0
-MAINTAINER Lee Witherington lee@witherington.net
+FROM helpdeskgroup/supervisor:3.2.0-r0
+MAINTAINER helpdeskgroup helpdeskgroup@helpme.net
 
 RUN apk update && \
     apk upgrade && \
