@@ -3,7 +3,7 @@ MAINTAINER helpdeskgroup helpdeskgroup@helpme.net
 
 RUN apk update && \
     apk upgrade && \
-    apk add --no-cache logrotate varnish=4.1.9-r0
+    apk add --no-cache logrotate varnish=5.2.1-r0
 
 ADD ./config /etc
 
