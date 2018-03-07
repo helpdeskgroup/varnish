@@ -1,7 +1,7 @@
 FROM helpdeskgroup/supervisor:3.2.0-r0
 MAINTAINER helpdeskgroup helpdeskgroup@helpme.net
 
-RUN apk add --no-cache alpine=3.4
+RUN apk add --no-cache alpine=3.4 && \
     apk add --no-cache logrotate varnish=4.1.9-r0
 
 ADD ./config /etc
