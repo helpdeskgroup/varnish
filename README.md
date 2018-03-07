@@ -1,7 +1,7 @@
 # Varnish Docker container
-* Alpine 3.7
-* Supervisor 3.3.3-r1
-* Varnish 5.2.1-r0
+* Alpine 3.4
+* Supervisor 3.2.4-r0
+* Varnish 4.1.9-r0
 
 This docker container uses supervisord as its root process which allows both varnish and varnishnsa processes to run within the same container. There is a volume mount at `/var/log/varnish` which is used by varnishncsa to write its log files.
 
